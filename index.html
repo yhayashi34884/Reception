@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>準備中</title>
+  <script>
+    window.onload = function() {
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const currentTime = hours * 60 + minutes;
+
+      const showStart = 14 * 60; // 14:00
+      const showSwitch = 16 * 60; // 16:00
+
+      if (currentTime < showStart) {
+        document.body.innerHTML = "<h2>披露宴第二部から公開予定。お楽しみに！</h2>";
+      } else if (currentTime >= showStart && currentTime < showSwitch) {
+        window.location.href = "https://yhayashi34884.github.io/Reception/Limited_Drink_Menu.pdf";
+      } else {
+        window.location.href = "https://yhayashi34884.github.io/Reception/Namba_Map.pdf";
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>準備中...</p>
+</body>
+</html>
